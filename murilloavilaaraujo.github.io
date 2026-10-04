@@ -17,7 +17,15 @@ nav{border-bottom:1px solid var(--line);position:sticky;top:0;background:var(--b
 nav .wrap{display:flex;gap:20px;padding:14px 20px;overflow-x:auto;white-space:nowrap}
 nav a{text-decoration:none;color:var(--muted);font-size:14px}
 nav a:hover{color:var(--accent)}
-.hero{padding:72px 0 48px}
+.hero{padding:56px 0 44px}
+.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:36px;align-items:center}
+@media(max-width:700px){.hero-grid{grid-template-columns:1fr}.photo-box{order:-1;margin:0 auto}}
+.badge{display:inline-flex;align-items:center;gap:8px;font-size:13px;border:1px solid var(--line);background:var(--soft);padding:5px 12px;border-radius:99px;margin-bottom:18px}
+.badge i{width:8px;height:8px;border-radius:50%;background:#2e9e5b;display:inline-block}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 26px}
+.chips span{font-size:13px;background:var(--soft);border:1px solid var(--line);padding:4px 12px;border-radius:99px}
+.photo-box{position:relative;width:260px;height:260px;border-radius:50%;border:3px solid var(--accent);overflow:hidden;background:var(--soft);display:flex;align-items:center;justify-content:center;font-size:64px;font-weight:600;color:var(--muted)}
+.photo-box img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .hero h1{font-size:clamp(30px,6vw,46px);line-height:1.15;margin:0 0 12px;font-weight:600}
 .hero p.lead{font-size:18px;color:var(--muted);max-width:620px;margin:0 0 28px}
 .btn{display:inline-block;padding:10px 18px;border:1px solid var(--fg);border-radius:6px;text-decoration:none;font-size:14px;margin:0 8px 8px 0}
@@ -46,14 +54,20 @@ footer{padding:32px 0;color:var(--muted);font-size:13px;border-top:1px solid var
 <a href="#sobre">Sobre</a><a href="#competencias">Competências</a><a href="#trajetoria">Trajetória</a><a href="#projetos">Projetos</a><a href="#contato">Contato</a>
 </div></nav>
 
-<header class="wrap hero">
-<h1>Murillo Araujo<br>Analista de Dados</h1>
-<p class="lead">Transformo dados de operação e negócio em indicadores que ajudam a identificar problemas, oportunidades e melhorar decisões. Power BI, SQL e Python.</p>
+<header class="wrap hero"><div class="hero-grid">
+<div>
+<span class="badge"><i></i>Disponível para oportunidades</span>
+<h1>Olá, eu sou<br>Murillo Araujo.</h1>
+<p class="lead"><strong style="color:var(--accent)">Analista de Dados</strong>. Transformo dados de operação e negócio em indicadores que ajudam a identificar problemas, oportunidades e melhorar decisões, com Power BI, SQL e Python.</p>
+<div class="chips"><span>Perfil analítico</span><span>Documento minhas decisões</span><span>Sempre aprendendo</span></div>
 <a class="btn main" href="#projetos">Ver projetos</a>
+<a class="btn" href="#contato">Falar comigo</a>
+<a class="btn" href="curriculo.pdf">Baixar currículo</a>
 <a class="btn" href="https://github.com/murilloavilaaraujo" target="_blank" rel="noopener">GitHub</a>
 <a class="btn" href="https://www.linkedin.com/in/murilloaraujo/" target="_blank" rel="noopener">LinkedIn</a>
-<a class="btn" href="curriculo.pdf">Baixar currículo</a>
-</header>
+</div>
+<div class="photo-box">MA<img src="assets/foto.jpg" alt="Foto de Murillo Araujo" onerror="this.style.display='none'"></div>
+</div></header>
 
 <section id="sobre"><div class="wrap">
 <h2>Sobre</h2>
