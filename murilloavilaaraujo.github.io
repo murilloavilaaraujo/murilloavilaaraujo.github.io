@@ -78,7 +78,7 @@ footer{padding:32px 0;color:var(--muted);font-size:13px;border-top:1px solid var
 <a class="btn" href="https://github.com/murilloavilaaraujo" target="_blank" rel="noopener">GitHub</a>
 <a class="btn" href="https://www.linkedin.com/in/murilloaraujo/" target="_blank" rel="noopener">LinkedIn</a>
 </div>
-<div class="photo-box">MA<img src="assets/foto.jpg" alt="Foto de Murillo Araujo" onerror="this.style.display='none'"></div>
+<div class="photo-box"><img src="foto.png" alt="Foto de Murillo Araujo"></div>
 </div></header>
 
 <section id="sobre"><div class="wrap">
